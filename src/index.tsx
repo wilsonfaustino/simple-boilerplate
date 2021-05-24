@@ -1,9 +1,8 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import { RecoilRoot } from 'recoil';
-import './index.css';
-import App from './App';
-
+import React from 'react'
+import ReactDOM from 'react-dom'
+import { RecoilRoot } from 'recoil'
+import './index.css'
+import App from './App'
 
 ReactDOM.render(
   <React.StrictMode>
@@ -12,5 +11,4 @@ ReactDOM.render(
     </RecoilRoot>
   </React.StrictMode>,
   document.getElementById('root')
-);
-
+)
