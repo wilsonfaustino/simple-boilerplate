@@ -1,4 +1,5 @@
 import { Story, Meta } from '@storybook/react'
+import { RecoilRoot } from 'recoil'
 
 import App from './App'
 
@@ -7,4 +8,8 @@ export default {
   component: App,
 } as Meta
 
-export const Primary: Story = () => <App />
+export const Primary: Story = () => (
+  <RecoilRoot>
+    <App />
+  </RecoilRoot>
+)
