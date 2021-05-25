@@ -1,24 +1,20 @@
 import React from 'react'
-import {
-    Provider,
-    defaultTheme,
-    Button,
-    View,
-    Flex
-} from '@adobe/react-spectrum'
+import { Provider, defaultTheme, View, Flex } from '@adobe/react-spectrum'
+import Main from './components/Main'
 
 function App() {
     return (
-        <Provider theme={defaultTheme}>
-            <View height='100vh' backgroundColor='indigo-400'>
+        <Provider theme={defaultTheme} colorScheme='dark'>
+            <View height='100vh' backgroundColor='gray-100'>
                 <Flex
                     alignItems='center'
                     justifyContent='center'
                     height='100vh'
                 >
-                    <Button variant='cta' onPress={() => alert('Hey there!')}>
-                        Hello React Spectrum!
-                    </Button>
+                    <Main
+                        title='X Story'
+                        subtitle='a very difficult to build boilerplate'
+                    />
                 </Flex>
             </View>
         </Provider>
